@@ -1,4 +1,5 @@
 import React from 'react'
+import './blogform.css'
 
 export default function blogform() {
     return (
