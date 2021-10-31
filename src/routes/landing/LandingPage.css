@@ -3,13 +3,13 @@
 }
 
 .welcome {
-    color: lightblue;
+    color: rgb(126, 182, 201);
     text-align: center;
     font-size: 100px;
 }
 
 h2 {
-    color: lightblue;
+    color: rgb(149, 196, 212);
     text-align: center;
     font-size: 20px;
 }
