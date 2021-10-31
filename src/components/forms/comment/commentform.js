@@ -15,12 +15,12 @@ export default function commentform() {
               placeholder="Write your comment here..."
             ></textarea>
           </div>
-            <div class="btns">
+          <div class="btns">
             <button type="button" class="btn btn-secondary">
-                Cancel
+              Cancel
             </button>
             <button type="button" class="btn btn-info">
-                Post
+              Post
             </button>
           </div>
         </div>
