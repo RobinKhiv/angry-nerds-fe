@@ -1,0 +1,27 @@
+.landing{
+    padding-top: 200px;
+}
+
+.welcome {
+    color: lightblue;
+    text-align: center;
+    font-size: 100px;
+}
+
+h2 {
+    color: lightblue;
+    text-align: center;
+    font-size: 20px;
+}
+
+.btn {
+    margin: auto;
+}
+
+.btns {
+    display: grid;
+    gap: 2;
+    columns: 6;
+    /* margin: auto; */
+}
+
