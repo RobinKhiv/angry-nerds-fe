@@ -1,5 +1,6 @@
 import React from 'react'
 import Card from '../../components/card/card';
+import ForumForm from '../../components/forms/forum/forumform';
 
 export default function DashboardPage() {
     const data = {
@@ -18,6 +19,9 @@ export default function DashboardPage() {
             </div>
             <div className="row">
                 <div className="col-8">
+                    <div className="text-center mb-4">
+                        <ForumForm/>
+                    </div>
                     {data.content.map(forum => <Card key={forum.id} title={forum.title} user={forum.user} content={forum.content}/>)}
                 </div>
                 <div className="col-3">
