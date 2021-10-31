@@ -2,10 +2,10 @@
     padding-top: 200px;
 }
 
-h1 {
+.welcome {
     color: lightblue;
     text-align: center;
-    font-size: 50px;
+    font-size: 100px;
 }
 
 h2 {
@@ -14,11 +14,14 @@ h2 {
     font-size: 20px;
 }
 
-button {
-    color:black;
-    background-color: lightgray;
-}
 .btn {
-    width: 62px;
     margin: auto;
 }
+
+.btns {
+    display: grid;
+    gap: 2;
+    columns: 6;
+    /* margin: auto; */
+}
+
