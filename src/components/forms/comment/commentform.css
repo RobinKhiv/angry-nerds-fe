@@ -1,0 +1,14 @@
+.form-label {
+    font-size: 20px;
+}
+
+.form-control {
+    padding: 10px 10px;
+}
+
+.btns {
+    display: flex;
+    justify-content:flex-end;
+    padding: 5px;
+}
+

@@ -1,4 +1,5 @@
 import React from 'react'
+import Commentform from '../../components/forms/comment/commentform'
 
 export default function ContentPage(props) {
     const data = {
@@ -11,6 +12,7 @@ export default function ContentPage(props) {
     return (
         <div>
             content
+            <Commentform/>
         </div>
     )
 }
