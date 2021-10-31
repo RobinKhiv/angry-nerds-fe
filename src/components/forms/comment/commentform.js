@@ -4,7 +4,11 @@ import "./commentform.css";
 export default function commentform() {
   return (
     <div class="container">
-      <form>
+      <div className="row justify-content-center">
+
+      <div className="col-10">
+
+      <form >
         <div>
           <label class="form-label">Add Comment</label>
           <div>
@@ -13,7 +17,7 @@ export default function commentform() {
               id="comment-textarea"
               rows="4"
               placeholder="Write your comment here..."
-            ></textarea>
+              ></textarea>
           </div>
           <div class="btns">
             <button type="button" class="btn btn-secondary">
@@ -26,5 +30,7 @@ export default function commentform() {
         </div>
       </form>
     </div>
+              </div>
+              </div>
   );
 }
