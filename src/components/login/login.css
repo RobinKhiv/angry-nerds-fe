@@ -1,0 +1,25 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+body {
+    display: grid;
+    background: white;
+    min-height: 100vh;
+}
+
+#login-container {
+    place-items: center center;
+    padding-top: 100px;
+}
+
+#login-form {
+    max-width: 330px;
+}
+
+.form-control:focus {
+    z-index: 5;
+}
+
+.angrynerd-logo {
+    width: 250px;
+    height: 250px;
+}
