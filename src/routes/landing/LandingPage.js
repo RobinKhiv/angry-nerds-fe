@@ -4,15 +4,15 @@ import "./LandingPage.css";
 
 export default function LandingPage() {
   return (
-    <section class="landing">
+    <section className="landing">
       <div className="container-xl">
-        <h1 class="welcome">Welcome Angry Nerds!</h1>
+        <h1 className="welcome">Welcome Angry Nerds!</h1>
         <h2>Become an angry nerd today.</h2>
-        <div class="btns">
+        <div className="btns">
           <Link to="/register" className="btn btn-info">Sign Up</Link> 
         </div>
         <h2>Already an angry nerd? Log in.</h2>
-        <div class="btns">
+        <div className="btns">
           <Link to="/login" className="btn btn-info">Login</Link> 
         </div>
       </div>

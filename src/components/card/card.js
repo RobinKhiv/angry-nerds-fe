@@ -1,14 +1,14 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function card(props) {
-
     return (
-        <div class="card border-primary mb-3" >
-            <div class="card-header">Author: {props.user}</div>
-            <div class="card-body text-primary">
-                <h5 class="card-title">{props.title}</h5>
-                <p class="card-text">{props.content}</p>
+        <Link className="card border-primary mb-3 text-decoration-none" to={`/blog/${props.id}`} >
+            <div className="card-header">Author: {props.user}</div>
+            <div className="card-body text-primary">
+                <h5 className="card-title">{props.title}</h5>
+                <p className="card-text">{props.content}</p>
             </div>
-        </div>
+        </Link>
     )
 }

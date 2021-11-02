@@ -4,15 +4,15 @@ export default function forumpost(props) {
     return (
         <div className="row justify-content-center mb-4 mt-4">
             <div className="col-10">
-                <div class="card text-center">
-                    <div class="card-header">
+                <div className="card text-center">
+                    <div className="card-header">
                         {props.author}
                     </div>
-                    <div class="card-body">
-                        <h5 class="card-title">{props.title}</h5>
-                        <p class="card-text">{props.content}</p>
+                    <div className="card-body">
+                        <h5 className="card-title">{props.title}</h5>
+                        <p className="card-text">{props.content}</p>
                     </div>
-                    <div class="card-footer text-muted">
+                    <div className="card-footer text-muted">
                         2 days ago
                     </div>
                 </div>
