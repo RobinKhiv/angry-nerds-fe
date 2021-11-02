@@ -1,5 +1,6 @@
 import React from 'react'
-import { Container, FormGroup } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import './login.css'
@@ -23,7 +24,9 @@ export default function login() {
                     <Button variant="primary" size="lg">Log in</Button>
                 </div>
                 <div className="d-grid">
-                    <Button variant="primary" size="lg">Register</Button>
+                    <Link to="/register">
+                        <Button variant="primary" size="lg" >Register</Button>
+                    </Link>
                 </div>
                 <p className="mt-5 text-muted">&copy; 2021</p>
             </Form>
