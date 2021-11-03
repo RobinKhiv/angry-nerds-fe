@@ -15,12 +15,20 @@ export default function LandingPage() {
 
       <div className="container-x1">
         <div class="sign-top">
-        <h3 class="text">Angry Nerds</h3>
+        <h2 class="text">Angry Nerds</h2>
         <h3 class="text">The place to release your anger.</h3>
-
+        
+        <h3>Become an angry nerd today.</h3>
         <div className="btns">
           <Link to="/register" className="btn btn-info">
             Sign Up
+          </Link>
+        </div>
+
+        <h3>Already an angry nerd? Log in.</h3>
+        <div className="btns">
+          <Link to="/login" className="btn btn-info">
+            Login
           </Link>
         </div>
         </div>
@@ -52,21 +60,7 @@ export default function LandingPage() {
         <div class="icon-title">
         <h3 className="noticed">GET NOTICED</h3>
         <h3 className="express">EXPRESS YOURSELF</h3>
-        <h3 className="agree">AGREE WITH OTHERS</h3>
-        </div>
-
-        <h2>Become an angry nerd today.</h2>
-        <div className="btns">
-          <Link to="/register" className="btn btn-info">
-            Sign Up
-          </Link>
-        </div>
-
-        <h2>Already an angry nerd? Log in.</h2>
-        <div className="btns">
-          <Link to="/login" className="btn btn-info">
-            Login
-          </Link>
+        <h3 className="agree">DISAGREE WITH OTHERS</h3>
         </div>
       </div>
     </section>
