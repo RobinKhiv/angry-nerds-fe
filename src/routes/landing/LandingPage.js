@@ -14,13 +14,16 @@ export default function LandingPage() {
         <Link to="/register" className="btn btn-info">Sign Up</Link> 
         </div>
         <h1 class="welcome">Welcome Angry Nerds!</h1>
-        <h3 class="text">Learn More</h3>
+        <h3 className="text">Learn More</h3>
 
         <img className="getnoticed" src="static/getnoticed.png "alt="Get Noticed"/>
         <img className="expressyourself" src="static/expressyourself.png" alt="Express Yourself"/>
         <img className="agreewithothers" src="static/agreewithothers.png" alt="Agree With Others"/>
 
-        <h3 class="text">Get Noticed. Express Yourself. Agree with others.</h3>
+        <h3 className="noticed">GET NOTICED</h3>
+        <h3 className="express">EXPRESS YOURSELF</h3>
+        <h3 className="agree">AGREE WITH OTHERS</h3>
+
         <h2>Become an angry nerd today.</h2>
         <div className="btns">
           <Link to="/register" className="btn btn-info">Sign Up</Link> 
