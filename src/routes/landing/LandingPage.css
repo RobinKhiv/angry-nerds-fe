@@ -1,3 +1,21 @@
+.img-top {
+    display: flex;
+    justify-content: center;
+}
+
+.sign-top {
+    position: absolute;
+    right: 390px;
+    top: 300px;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5px;
+    padding-right: 10%;
+}
+
 .landing{
     padding-top: 200px;
 }
