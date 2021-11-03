@@ -1,14 +1,9 @@
 import React, { Component } from 'react';
 import ApiService from '../services/ApiService';
-// import IdleService from '../services/idle-service';
 import JwtService from '../services/JwtService';
 
 const UserContext = React.createContext({
   user: {},
-  error: null,
-  updateTime: () => {},
-  setError: () => {},
-  clearError: () => {},
   setUser: () => {},
   processLogin: () => {},
   processLogout: () => {}
@@ -32,12 +27,10 @@ export class UserProvider extends Component {
       };
 
     this.state = state;
-    // IdleService.setIdleCallback(this.logoutBecauseIdle);
   }
 
   componentDidMount() {
     if (JwtService.hasAuthToken()) {
-      // IdleService.regiserIdleTimerResets();
       JwtService.queueCallbackBeforeExpiry(() => {
         this.fetchRefreshToken();
       });
@@ -45,7 +38,6 @@ export class UserProvider extends Component {
   }
 
   componentWillUnmount() {
-    // IdleService.unRegisterIdleResets();
     JwtService.clearCallbackBeforeExpiry();
   }
 
@@ -59,7 +51,6 @@ export class UserProvider extends Component {
     this.setUser({
       username: jwtPayload.sub
     });
-    // IdleService.regiserIdleTimerResets();
     JwtService.queueCallbackBeforeExpiry(() => {
       this.fetchRefreshToken();
     });
@@ -68,14 +59,12 @@ export class UserProvider extends Component {
   processLogout = () => {
     JwtService.clearAuthToken();
     JwtService.clearCallbackBeforeExpiry();
-    // IdleService.unRegisterIdleResets();
     this.setUser({});
   };
 
   logoutBecauseIdle = () => {
     JwtService.clearAuthToken();
     JwtService.clearCallbackBeforeExpiry();
-    // IdleService.unRegisterIdleResets();
     this.setUser({ idle: true });
   };
 
@@ -88,16 +77,13 @@ export class UserProvider extends Component {
         });
       })
       .catch(err => {
-        this.setError(err);
+        this.processLogout();
       });
   };
 
   render() {
     const value = {
       user: this.state.user,
-      error: this.state.error,
-      setError: this.setError,
-      clearError: this.clearError,
       setUser: this.setUser,
       processLogin: this.processLogin,
       processLogout: this.processLogout

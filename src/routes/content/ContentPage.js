@@ -33,7 +33,7 @@ export default function ContentPage(props) {
     }, [id]);
  
     return (
-        <section className="container">
+        <section className="container pb-8">
             <ForumPost author={forum.username} title={forum.title} content={forum.content}/>
             <Commentform forum_id={forum.id}/>
             <div className="row justify-content-center">

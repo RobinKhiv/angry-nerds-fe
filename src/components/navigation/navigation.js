@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Link, useHistory } from 'react-router-dom';
 import UserContext from "../../context/UserContext";
 import JwtService from "../../services/JwtService";
+import { Nav, Navbar, Container, Offcanvas } from 'react-bootstrap';
 import "./navigation.css";
 
 export default function Navigation() {
@@ -17,7 +18,7 @@ export default function Navigation() {
     return(
       <React.Fragment>
         <li className="nav-item">
-          <Link className="nav-link" to='/dashboard'>Hello, {context.user.username}</Link>
+          <Link className="nav-link" to='/dashboard'>Home</Link>
         </li>
         <li className="nav-item">
           <button onClick={logout} className="btn btn-outline-primary">Logout</button>
@@ -25,6 +26,7 @@ export default function Navigation() {
       </React.Fragment>
     )
   }
+
   const loggedOut = () => {
     return (
       <React.Fragment>
@@ -38,16 +40,29 @@ export default function Navigation() {
     )
   }
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <Link className="navbar-brand" to='/'>AngryNerds</Link>
-      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      <div className="collapse navbar-collapse" id="navbarNav">
-        <ul className="navbar-nav">
-          {JwtService.hasAuthToken() ? loggedIn() : loggedOut()}
-        </ul>
-      </div>
-    </nav>
+    <Navbar bg="light" expand={false}>
+    <Container fluid>
+      <Navbar.Brand >
+        <Nav.Link as={Link} to='/dashboard'>{JwtService.hasAuthToken() ? `Hello, ${context.user.username}` : 'Angry Nerds'} 
+          {JwtService.hasAuthToken() && <button onClick={logout} className="btn btn-outline-primary">Logout</button>}
+        </Nav.Link>
+      </Navbar.Brand>
+      <Navbar.Toggle aria-controls="offcanvasNavbar" />
+      <Navbar.Offcanvas
+        id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel"
+        placement="end"
+      >
+        <Offcanvas.Header closeButton>
+          <Offcanvas.Title id="offcanvasNavbarLabel">Angry Nerds</Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body>
+          <Nav className="justify-content-end flex-grow-1 pe-3">
+            {JwtService.hasAuthToken() ? loggedIn() : loggedOut()}
+          </Nav>
+        </Offcanvas.Body>
+      </Navbar.Offcanvas>
+    </Container>
+  </Navbar>
   );
 }
