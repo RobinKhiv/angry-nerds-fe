@@ -2,6 +2,11 @@
     padding-top: 200px;
 }
 
+.section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
 .welcome {
     color: rgb(126, 182, 201);
     text-align: center;
@@ -30,3 +35,30 @@ h3 {
     /* margin: auto; */
 }
 
+.angrynerds {
+    width: 1400px;
+    height: 850px;
+    margin-top: -200px;
+    margin-bottom: auto;
+}
+
+.getnoticed {
+    width: 250px;
+    height: 250px;
+    margin-left: 140px;
+    margin-right: 200px;
+}
+
+.expressyourself {
+    width: 250px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: 200px;
+}
+
+.agreewithothers {
+    width: 250px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}

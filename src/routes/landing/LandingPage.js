@@ -5,13 +5,27 @@ import "./LandingPage.css";
 export default function LandingPage() {
   return (
     <section className="landing">
-      <div className="container-xl">
+      <img className="angrynerds" src="static/angrynerds.jpg" alt="Angry Nerds"/>
+      <div className="container-x1">
+        <h3 class="text">Angry Nerds</h3>
+        <h3 class="text">The place to release your anger.</h3>
+
+        <div className="btns"> 
+        <Link to="/register" className="btn btn-info">Sign Up</Link> 
+        </div>
         <h1 class="welcome">Welcome Angry Nerds!</h1>
-        <h3 class="text">Express Yourself.  Agree With Others.  Get Noticed.</h3>
+        <h3 class="text">Learn More</h3>
+
+        <img className="getnoticed" src="static/getnoticed.png "alt="Get Noticed"/>
+        <img className="expressyourself" src="static/expressyourself.png" alt="Express Yourself"/>
+        <img className="agreewithothers" src="static/agreewithothers.png" alt="Agree With Others"/>
+
+        <h3 class="text">Get Noticed. Express Yourself. Agree with others.</h3>
         <h2>Become an angry nerd today.</h2>
         <div className="btns">
           <Link to="/register" className="btn btn-info">Sign Up</Link> 
         </div>
+        
         <h2>Already an angry nerd? Log in.</h2>
         <div className="btns">
           <Link to="/login" className="btn btn-info">Login</Link> 
