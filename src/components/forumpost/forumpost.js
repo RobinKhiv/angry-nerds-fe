@@ -13,7 +13,6 @@ export default function forumpost(props) {
                         <p className="card-text">{props.content}</p>
                     </div>
                     <div className="card-footer text-muted">
-                        2 days ago
                     </div>
                 </div>
             </div>
