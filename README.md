@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# Angry Nerds Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Angry Nerds Appication that will interact through CRUD(create, read, update, delete) services on a Postgres database.
 
-## Available Scripts
+* [Angery Nerds Frontend](https://github.com/CPSC349-Angry-Nerds/Angery-Nerds-FE)
+* [Angery Nerds Backend](https://github.com/CPSC349-Angry-Nerds/Angry-Nerds-BE)
 
-In the project directory, you can run:
+## Live Application
 
-### `npm start`
+* [Angery Nerds](https://angry-nerds.vercel.app/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Getting Started
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+These instructions will get you a copy of the Angry Nerds Frontend Application and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Install Node Package Manager and Visual Studio Code. Also make sure [Angery Nerds Backend](https://github.com/CPSC349-Angry-Nerds/Angry-Nerds-BE) is up and running on the local enviroment.
 
-### `npm run build`
+### Installing
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Copy git respository to local machine
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+git clone https://github.com/CPSC349-Angry-Nerds/Angery-Nerds-FE.git angry-frontend
+```
+`cd` into the cloned repository
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+cd angry-frontend
+```
+Make a fresh start of the git history for this project with 
+```
+rm -rf .git && git init
+```
 
-### `npm run eject`
+Install the node dependencies 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
+npm install
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Running the application
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+The server can be ran with 
+```
+npm start
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Built With
 
-## Learn More
+* [ReactJS](https://reactjs.org/) - Javascript Library
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Deployment
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* [Vercel](https://vercel.com/) - Deployment
 
-### Code Splitting
+## Authors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* **Robin Khiv**
+* **Uyen Le**
+* **Jose Arce**
+* **Kevin Tu**
