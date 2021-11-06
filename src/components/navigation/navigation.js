@@ -43,7 +43,7 @@ export default function Navigation() {
     <Navbar bg="light" expand={false}>
     <Container fluid>
       <Navbar.Brand >
-        <Nav.Link as={Link} to='/dashboard'>{JwtService.hasAuthToken() ? `Hello, ${context.user.username}` : 'Angry Nerds'} 
+        <Nav.Link as={Link} to='/dashboard'>{JwtService.hasAuthToken() ? `Hello, ${context.user.username}     ` : 'Angry Nerds'} 
           {JwtService.hasAuthToken() && <button onClick={logout} className="btn btn-outline-primary">Logout</button>}
         </Nav.Link>
       </Navbar.Brand>

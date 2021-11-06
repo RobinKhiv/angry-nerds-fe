@@ -23,7 +23,8 @@ export default function Commentform(props) {
               <label className="form-label">Add Comment</label>
               <div role="alert" className="text-danger">{error && <p>{error}</p>}</div>
               <div>
-                <textarea
+                <textarea 
+                  required
                   className="form-control"
                   id="comment-textarea"
                   name="content"
